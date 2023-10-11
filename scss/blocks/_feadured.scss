@@ -1,0 +1,49 @@
+.featured-collections {
+}
+.featured-collections__nav {
+   max-height: 690px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   gap: 18px 24px;
+}
+.features-collections__nav-block {
+   position: relative;
+   overflow: hidden;
+   &.big {
+      grid-column: 2/3;
+      grid-row: 1/3;
+      img {
+         height: 100%;
+      }
+   }
+   img {
+      object-fit: cover;
+      filter: opacity(0.7);
+      transition: all 0.3s ease;
+      &:hover {
+         transform: scale(1.1);
+         filter: none;
+      }
+   }
+   & a:hover::after {
+      position: absolute;
+      display: inline-block;
+      content: "";
+      background: url(/image/icons/rounded-arrow.svg) no-repeat;
+      background-position: center center;
+      width: 58px;
+      height: 55px;
+      border-radius: 10px 0px 0px 0px;
+      background-color: $bg-primary;
+      right: 0;
+      bottom: 0;
+   }
+}
+.featured-collections__name {
+   position: absolute;
+   bottom: 17px;
+   left: 23px;
+   z-index: 5;
+   font-weight: 800;
+}

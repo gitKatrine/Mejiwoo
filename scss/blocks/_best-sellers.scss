@@ -1,0 +1,55 @@
+.best-sellers {
+   margin-bottom: 60px;
+}
+.best-sellers__slider {
+   overflow: hidden;
+   position: relative;
+   &-carousel {
+      height: 100%;
+      display: flex;
+      column-gap: 24px;
+      transition: transform 1s ease;
+   }
+   &-nav {
+      &:hover {
+         cursor: pointer;
+      }
+      .prev {
+         position: absolute;
+         background: url(../../image/icons/arrow.svg) no-repeat;
+         top: 50%;
+         transform: translateY(-75%) scaleX(-1);
+         left: 8px;
+         width: 27px;
+         height: 45px;
+      }
+      .next {
+         position: absolute;
+         background: url(../../image/icons/arrow.svg) no-repeat;
+         top: 50%;
+         transform: translateY(-75%);
+         right: 8px;
+         width: 27px;
+         height: 45px;
+      }
+   }
+   .best-sellers__card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      width: 397px;
+   }
+}
+.best-sellers__card-img {
+   margin-bottom: 14px;
+}
+.best-sellers__card-desc {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   text-align: center;
+}
+.best-sellers__card-price {
+   font-size: 14px;
+}

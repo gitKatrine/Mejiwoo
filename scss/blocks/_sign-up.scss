@@ -1,0 +1,131 @@
+.sign-up {background-color: $bg-primary;
+
+}
+.sign-up__wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.sign-up__benefits {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 547px;
+   flex: 0 1 50%;
+   border-right: 1px solid black;
+}
+.sign-up__title {
+   width: 547px;
+   text-align: center;
+   font-size: 48px;
+   font-weight: 600;
+   margin-bottom: 60px;
+}
+.sign-up__benefits-list {
+   font-size: 24px;
+   font-weight: 600;
+   display: flex;
+   flex-direction: column;
+   row-gap: 40px;
+   li::before {
+      content: '';
+      display: block;
+      background: url(/image/icons/ul-rhombus.svg) no-repeat;
+      width: 30px;
+      height: 30px;
+      float: left;
+   }
+}
+.sign-up__form {
+   padding: 185px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex: 0 1 50%;
+}
+.sign-up__form-inner {
+   width: 463px;
+   overflow: hidden;
+}
+.sign-up__form-input {
+   display: flex;
+   flex-direction:  column;
+   align-items: start;
+   row-gap: 30px;
+   width: 100%;
+   margin-bottom: 28px;
+}
+.sign-up__input {
+   border-radius: 4px;
+   font-size: 16px;
+   padding: 6px;
+   width: 100%;
+   &::placeholder {
+      text-align: center;
+      color: black;
+   }
+}
+.checkbox-agree{
+   input {
+      width: 26px;
+      height: 26px;
+      border-radius: 4px;
+   }
+   span {
+      vertical-align: super;
+   }
+   a {
+      font-weight: 600;
+   }
+}
+.sign-up__buttons { 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 23px;
+}
+.sign-up__del {
+   width: 100%;
+   text-align: center;
+   &::after, &:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      height: 1px;
+      background-color: black;
+      position: relative;
+   }
+   &::before {
+      margin-left: -100%;
+      left: -11px;
+   }
+   &::after {
+      margin-right: -100%;
+      right: -11px;
+   }
+}
+.sign-up__btn-google {
+   display: flex;
+   align-items: center;
+   &::before {
+      content: '';
+      background: url(/image/icons/google.svg) no-repeat;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+   }
+}
+.sign-up__btn-fb {
+   display: flex;
+   align-items: center;
+   &::before {
+      content: '';
+      background: url(/image/icons/fb.svg) no-repeat;
+      background-size: 100%;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+   }
+}
